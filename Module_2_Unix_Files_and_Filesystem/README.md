@@ -6,7 +6,7 @@ Unix file system is a logical method of organizing and storing large amounts of 
 
 Files in Unix System are organized into multi-level hierarchy structure known as a directory tree. At the very top of the file system is a directory called “root” which is represented by a “/”. All other files are “descendants” of root.
 
-![filesystem_hierarchy](images/fileystem_hierarchy.png)
+![filesystem_hierarchy](.images/fileystem_hierarchy.png)
 
 Directories or Files and their description –
 
@@ -38,7 +38,7 @@ Directories or Files and their description –
 
 ---
 
-![file_types](images/file_types.png)
+![file_types](.images/file_types.png)
 
 
 The UNIX files system contains several different types of files :
