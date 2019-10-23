@@ -1,5 +1,6 @@
 # Unix
 
+![Operating_system](images/Operating_systems.png)
 UNIX was an operating system developed at AT&T
 Bell Labs in the 1960s through the 1980s.
 
@@ -134,4 +135,8 @@ how programs relate to each other.
 
 Unix Programming Environment 1984
 Brian Kernighan and Rob Pike
+
+# Unix Distributions
+
+The Unix family of operating system has wide variety of [distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) available.
 
