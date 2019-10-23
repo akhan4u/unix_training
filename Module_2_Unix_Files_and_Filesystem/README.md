@@ -10,6 +10,7 @@ Files in Unix System are organized into multi-level hierarchy structure known as
 
 Directories or Files and their description –
 
+```
 / : The slash / character alone denotes the root of the filesystem tree.
 /bin : Stands for “binaries” and contains certain fundamental utilities, such as ls or cp, which are generally needed by all users.
 /boot : Contains all the files that are required for successful booting process.
@@ -31,7 +32,7 @@ Directories or Files and their description –
 /var/mail : The place where all the incoming mails are stored. Users (other than root) can access their own mail only. Often, this directory is a symbolic link to /var/spool/mail.
 /var/spool : Spool directory. Contains print jobs, mail spools and other queued tasks.
 /var/tmp : A place for temporary files which should be preserved between system reboots.
-
+```
 
 # Types of files
 
@@ -42,39 +43,48 @@ Directories or Files and their description –
 
 The UNIX files system contains several different types of files :
 
-1. Ordinary files – An ordinary file is a file on the system that contains data, text, or program instructions.
+1. <b>Ordinary files</b> – An ordinary file is a file on the system that contains data, text, or program instructions.
 
-Used to store your information, such as some text you have written or an image you have drawn. This is the type of file that you usually work with.
+Used to store your information, such as some text you have written or an image you have drawn. This is the type of file that you usually work with. <br />
 Always located within/under a directory file.
 Do not contain other files.
 In long-format output of ls -l, this type of file is specified by the “-” symbol.
-2. Directories – Directories store both special and ordinary files. For users familiar with Windows or Mac OS, UNIX directories are equivalent to folders. A directory file contains an entry for every file and subdirectory that it houses. If you have 10 files in a directory, there will be 10 entries in the directory. Each entry has two components.
-(1) The Filename
-(2) A unique identification number for the file or directory (called the inode number)
+
+
+2. <b>Directories</b> – Directories store both special and ordinary files. For users familiar with Windows or Mac OS, UNIX directories are equivalent to folders. A directory file contains an entry for every file and subdirectory that it houses. If you have 10 files in a directory, there will be 10 entries in the directory. Each entry has two components. <br />
+
+    (1) The Filename <br />
+    (2) A unique identification number for the file or directory (called the inode number) <br />
 
 Branching points in the hierarchical tree.
 Used to organize groups of files.
 May contain ordinary files, special files or other directories.
 Never contain “real” information which you would work with (such as text). Basically, just used for organizing files.
-All files are descendants of the root directory, ( named / ) located at the top of the tree.
+All files are descendants of the root directory, ( named / ) located at the top of the tree. <br />
+
 In long-format output of ls –l , this type of file is specified by the “d” symbol.
 
-3. Special Files – Used to represent a real physical device such as a printer, tape drive or terminal, used for Input/Ouput (I/O) operations. Device or special files are used for device Input/Output(I/O) on UNIX and Linux systems. They appear in a file system just like an ordinary file or a directory.
+3. <b>Special Files</b> – Used to represent a real physical device such as a printer, tape drive or terminal, used for Input/Ouput (I/O) operations. Device or special files are used for device Input/Output(I/O) on UNIX and Linux systems. They appear in a file system just like an ordinary file or a directory.
 On UNIX systems there are two flavors of special files for each device, character special files and block special files :
+<br />
 
 When a character special file is used for device Input/Output(I/O), data is transferred one character at a time. This type of access is called raw device access.
+<br />
 When a block special file is used for device Input/Output(I/O), data is transferred in large fixed-size blocks. This type of access is called block device access.
-For terminal devices, it’s one character at a time. For disk devices though, raw access means reading or writing in whole chunks of data – blocks, which are native to your disk.
+<br />
+For terminal devices, it’s one character at a time. For disk devices though, raw access means reading or writing in whole chunks of data – blocks, which are native to your disk. <br />
 
-In long-format output of ls -l, character special files are marked by the “c” symbol.
-In long-format output of ls -l, block special files are marked by the “b” symbol.
-4. Pipes – UNIX allows you to link commands together using a pipe. The pipe acts a temporary file which only exists to hold data from one command until it is read by another.A Unix pipe provides a one-way flow of data.The output or result of the first command sequence is used as the input to the second command sequence. To make a pipe, put a vertical bar (|) on the command line between two commands.For example: who | wc -l
+In long-format output of ls -l, character special files are marked by the “c” symbol.<br />
+In long-format output of ls -l, block special files are marked by the “b” symbol.<br />
+
+
+4. <b>Pipes</b> – UNIX allows you to link commands together using a pipe. The pipe acts a temporary file which only exists to hold data from one command until it is read by another.A Unix pipe provides a one-way flow of data.The output or result of the first command sequence is used as the input to the second command sequence. To make a pipe, put a vertical bar (|) on the command line between two commands.For example: who | wc -l
 
 In long-format output of ls –l , named pipes are marked by the “p” symbol.
 
 
-5. Sockets – A Unix socket (or Inter-process communication socket) is a special file which allows for advanced inter-process communication. A Unix Socket is used in a client-server application framework. In essence, it is a stream of data, very similar to network stream (and network sockets), but all the transactions are local to the filesystem.
+5. <b>Sockets</b> – A Unix socket (or Inter-process communication socket) is a special file which allows for advanced inter-process communication. A Unix Socket is used in a client-server application framework. In essence, it is a stream of data, very similar to network stream (and network sockets), but all the transactions are local to the filesystem.
 
 In long-format output of ls -l, Unix sockets are marked by “s” symbol.
 
-6. Symbolic Link – Symbolic link is used for referencing some other file of the file system.Symbolic link is also known as Soft link. It contains a text form of the path to the file it references. To an end user, symbolic link will appear to have its own name, but when you try reading or writing data to this file, it will instead reference these operations to the file it points to. If we delete the soft link itself , the data file would still be there.If we delete the source file or move it to a different location, symbolic file will not function properly.
+6. <b>Symbolic Link</b> – Symbolic link is used for referencing some other file of the file system.Symbolic link is also known as Soft link. It contains a text form of the path to the file it references. To an end user, symbolic link will appear to have its own name, but when you try reading or writing data to this file, it will instead reference these operations to the file it points to. If we delete the soft link itself , the data file would still be there.If we delete the source file or move it to a different location, symbolic file will not function properly.
