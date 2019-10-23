@@ -1,6 +1,6 @@
 # Unix
 
-![Operating_system](images/Operating_systems.png)
+![Operating_system](.images/Operating_systems.png)
 UNIX was an operating system developed at AT&T
 Bell Labs in the 1960s through the 1980s.
 
@@ -51,7 +51,7 @@ programs, each with a special role:
 ---
 # kernel
 
-![UnixKernel-Architecture](images/unix_architecture.jpg)
+![UnixKernel-Architecture](.images/unix_architecture.jpg)
 
 mediate access between user programs and system resources
 
@@ -142,8 +142,8 @@ The Unix family of operating system has wide variety of [distributions](https://
 
 Some Anonymous stats of Popular linux distributions used on server's.
 
-![Popular-server_distributions](images/server_distro_users.png)
+![Popular-server_distributions](.images/server_distro_users.png)
 
 Popular linux distributions used on Personal computers.
 
-![Popular-desktop-distributions](images/desktop_distro_users.png)
+![Popular-desktop-distributions](.images/desktop_distro_users.png)
