@@ -48,7 +48,8 @@ The UNIX files system contains several different types of files :
 Used to store your information, such as some text you have written or an image you have drawn. This is the type of file that you usually work with. <br />
 Always located within/under a directory file.
 Do not contain other files.
-In long-format output of ls -l, this type of file is specified by the “-” symbol.
+
+* In long-format output of ls -l, this type of file is specified by the “-” symbol.
 
 
 2. <b>Directories</b> – Directories store both special and ordinary files. For users familiar with Windows or Mac OS, UNIX directories are equivalent to folders. A directory file contains an entry for every file and subdirectory that it houses. If you have 10 files in a directory, there will be 10 entries in the directory. Each entry has two components. <br />
@@ -62,9 +63,10 @@ May contain ordinary files, special files or other directories.
 Never contain “real” information which you would work with (such as text). Basically, just used for organizing files.
 All files are descendants of the root directory, ( named / ) located at the top of the tree. <br />
 
-In long-format output of ls –l , this type of file is specified by the “d” symbol.
+* In long-format output of ls –l , this type of file is specified by the “d” symbol.
 
 3. <b>Special Files</b> – Used to represent a real physical device such as a printer, tape drive or terminal, used for Input/Ouput (I/O) operations. Device or special files are used for device Input/Output(I/O) on UNIX and Linux systems. They appear in a file system just like an ordinary file or a directory.
+<br />
 On UNIX systems there are two flavors of special files for each device, character special files and block special files :
 <br />
 
@@ -74,17 +76,19 @@ When a block special file is used for device Input/Output(I/O), data is transfer
 <br />
 For terminal devices, it’s one character at a time. For disk devices though, raw access means reading or writing in whole chunks of data – blocks, which are native to your disk. <br />
 
-In long-format output of ls -l, character special files are marked by the “c” symbol.<br />
-In long-format output of ls -l, block special files are marked by the “b” symbol.<br />
+* In long-format output of ls -l, character special files are marked by the “c” symbol.<br />
+* In long-format output of ls -l, block special files are marked by the “b” symbol.<br />
 
 
 4. <b>Pipes</b> – UNIX allows you to link commands together using a pipe. The pipe acts a temporary file which only exists to hold data from one command until it is read by another.A Unix pipe provides a one-way flow of data.The output or result of the first command sequence is used as the input to the second command sequence. To make a pipe, put a vertical bar (|) on the command line between two commands.For example: who | wc -l
 
-In long-format output of ls –l , named pipes are marked by the “p” symbol.
+* In long-format output of ls –l , named pipes are marked by the “p” symbol.
 
 
 5. <b>Sockets</b> – A Unix socket (or Inter-process communication socket) is a special file which allows for advanced inter-process communication. A Unix Socket is used in a client-server application framework. In essence, it is a stream of data, very similar to network stream (and network sockets), but all the transactions are local to the filesystem.
 
-In long-format output of ls -l, Unix sockets are marked by “s” symbol.
+* In long-format output of ls -l, Unix sockets are marked by “s” symbol.
 
 6. <b>Symbolic Link</b> – Symbolic link is used for referencing some other file of the file system.Symbolic link is also known as Soft link. It contains a text form of the path to the file it references. To an end user, symbolic link will appear to have its own name, but when you try reading or writing data to this file, it will instead reference these operations to the file it points to. If we delete the soft link itself , the data file would still be there.If we delete the source file or move it to a different location, symbolic file will not function properly.
+
+* In long-format output of ls –l , Symbolic link are marked by the “l” symbol (that’s a lower case L).
