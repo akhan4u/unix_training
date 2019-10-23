@@ -140,3 +140,10 @@ Brian Kernighan and Rob Pike
 
 The Unix family of operating system has wide variety of [distributions](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) available.
 
+Some Anonymous stats of Popular linux distributions used on server's.
+
+![Popular-server_distributions](images/server_distro_users.png)
+
+Popular linux distributions used on Personal computers.
+
+![Popular-desktop-distributions](images/desktop_distro_users.png)
