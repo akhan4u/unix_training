@@ -96,13 +96,13 @@ For terminal devices, it’s one character at a time. For disk devices though, r
 
 # What is inode?
 
-[inode_in_linux](.images/inodes.png)
+![inode_in_linux](.images/inodes.png)
 
 
 # File permissions in Unix
 
-[file_permissions](.images/Unix_file_permissions.jpg)
+![file_permissions](.images/Unix_file_permissions.jpg)
 
 # proc file system 
 
-[proc](.images/proc.png)
+![proc](.images/proc.png)
