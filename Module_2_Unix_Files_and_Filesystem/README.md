@@ -92,3 +92,17 @@ For terminal devices, it’s one character at a time. For disk devices though, r
 6. <b>Symbolic Link</b> – Symbolic link is used for referencing some other file of the file system.Symbolic link is also known as Soft link. It contains a text form of the path to the file it references. To an end user, symbolic link will appear to have its own name, but when you try reading or writing data to this file, it will instead reference these operations to the file it points to. If we delete the soft link itself , the data file would still be there.If we delete the source file or move it to a different location, symbolic file will not function properly.
 
 * In long-format output of ls –l , Symbolic link are marked by the “l” symbol (that’s a lower case L).
+
+
+# What is inode?
+
+[inode_in_linux](../.images/inodes.png)
+
+
+# File permissions in Unix
+
+[file_permissions](../.images/Unix_file_permissions.jpg)
+
+# proc file system 
+
+[proc](../.images/proc.png)
