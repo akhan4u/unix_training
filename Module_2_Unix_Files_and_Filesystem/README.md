@@ -93,6 +93,9 @@ For terminal devices, it’s one character at a time. For disk devices though, r
 
 * In long-format output of ls –l , Symbolic link are marked by the “l” symbol (that’s a lower case L).
 
+# proc file system 
+
+![proc](.images/proc.png)
 
 # What is inode?
 
@@ -103,6 +106,3 @@ For terminal devices, it’s one character at a time. For disk devices though, r
 
 ![file_permissions](.images/Unix_file_permissions.jpg)
 
-# proc file system 
-
-![proc](.images/proc.png)
